@@ -5,7 +5,13 @@
 # Software Link: https://www.sourcecodester.com/sites/default/files/download/oretnom23/southgateinn.zip
 # Version: 1.0
 # Tested On: Ubuntu 18.04,Windows 10 + XAMPP 7.4
-# Description: The South Gate Inn Online Reservation System suffers from an SQLi authentication bypass which leads to Admin access on the application. From there it's possible to upload a malicious PHP file to the server by changing a Room Image (getimagesize bypass). Both SQL queries and file validations are not handled properly, which leaves the Webserver in a vulnerable state. 
+
+
+#Description: 
+# The South Gate Inn Online Reservation System suffers from an SQLi authentication Bypass which leads to Admin access on the application. 
+# From there it's possible to upload a malicious PHP file to the server by changing a Room Image (getimagesize PHP function bypass).
+# Both SQL queries and file validations are not handled properly, which leaves the Webserver in a vulnerable state.
+# The impact of this vulnerability is the compromise of the Webserver.
 
 import requests, sys
 from colorama import Fore, Back, Style
