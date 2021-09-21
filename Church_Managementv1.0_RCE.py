@@ -52,7 +52,7 @@ s = requests.Session()
 get_session = s.get(LOGIN_URL, verify=False)
 # Check connection to website & print session cookie to terminal OR die
 if get_session.status_code == 200:
-    print(ok + 'Successfully connected to Bike Rental PHP server & created session.')
+    print(ok + 'Successfully connected to Church Management CMS server & created session.')
     print(info + "Session Cookie: " + get_session.headers['Set-Cookie'])
 else:
     print(err + 'Cannot connect to the server and create a web session.')
